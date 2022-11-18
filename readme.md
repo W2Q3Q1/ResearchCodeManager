@@ -4,4 +4,4 @@
 
 # Build Information
 
-This project is built with QT6.3.1 (OpenSource), using CMAKE as the build system. For CMakeLists.txt are related to the specific building platform, we will not include CMakeLists.txt and CMakeLists.txt.user into Git system.
+This project is built with QT6.3.1 (OpenSource), using CMAKE as the build system. For CMakeLists.txt.user is related to the specific building platform, we will not include it into Git system.
