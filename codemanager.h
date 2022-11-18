@@ -15,8 +15,9 @@
     此类直接操作底层数据库、文件，因此不会进行任何的用户提示
     如需用户提示（如确定等），写在界面类
 */
-class CodeManager
+class CodeManager: QObject
 {
+    Q_OBJECT
     private:
         static CodeManager* self;
         QSqlDatabase database;
@@ -78,7 +79,7 @@ class CodeManager
         CodeManager();
         CodeManager(const CodeManager &c) = delete;
         CodeManager& operator=(const CodeManager& c) = delete;
-        ~CodeManager();
+        virtual ~CodeManager();
 
     public:
         static CodeManager *getSelf();

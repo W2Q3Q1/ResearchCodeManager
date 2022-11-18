@@ -14,7 +14,7 @@ class AddResearchDialog : public QDialog
 
 public:
     explicit AddResearchDialog(QWidget *parent = nullptr);
-    ~AddResearchDialog();
+    virtual ~AddResearchDialog();
 
     QString getNameInput();
     QString getInformationInput();

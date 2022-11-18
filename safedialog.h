@@ -15,7 +15,7 @@ class SafeDialog : public QDialog
     public:
         enum SafeDialogType{SAFE_CONFIRM, SAFE_CANCEL};
         explicit SafeDialog(const QString &message = QString(), QWidget *parent = nullptr, SafeDialogType dialog_type = SafeDialogType::SAFE_CONFIRM);
-        ~SafeDialog();
+        virtual ~SafeDialog();
 
     private:
         Ui::SafeDialog *ui;

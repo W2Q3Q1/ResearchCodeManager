@@ -61,7 +61,7 @@ class ResearchCodeManager : public QMainWindow
 
     public:
         ResearchCodeManager(QWidget *parent = nullptr);
-        ~ResearchCodeManager();
+        virtual ~ResearchCodeManager();
 
     private slots:
         void researchTreeCurrentItemChanged(QTreeWidgetItem *current, QTreeWidgetItem *previous);

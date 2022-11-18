@@ -15,7 +15,7 @@ class AddResultDialog : public QDialog
 
 public:
     explicit AddResultDialog(int code_idx, QWidget *parent = nullptr);
-    ~AddResultDialog();
+    virtual ~AddResultDialog();
 
     QString getNameInput();
     QMap<QString, QString> getHPInput();

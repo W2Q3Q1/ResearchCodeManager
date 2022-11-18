@@ -13,7 +13,7 @@ class AddCodeDialog : public QDialog
 
 public:
     explicit AddCodeDialog(int research_idx, QWidget *parent = nullptr);
-    ~AddCodeDialog();
+    virtual ~AddCodeDialog();
     QString getNameInput();
     QString getPathInput();
     QString getInformationInput();
