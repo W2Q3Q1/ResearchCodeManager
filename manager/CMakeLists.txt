@@ -14,6 +14,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets LinguistTools)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets LinguistTools)
 find_package(Qt6 REQUIRED COMPONENTS Sql)
+find_package(Qt6 REQUIRED COMPONENTS Network)
 
 set(TS_FILES research_code_manager_zh_CN.ts)
 
@@ -39,6 +40,7 @@ set(PROJECT_SOURCES
         addresultdialog.h
         addresultdialog.cpp
         addresultdialog.ui
+        constant.h
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)

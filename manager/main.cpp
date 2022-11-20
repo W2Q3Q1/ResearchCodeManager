@@ -31,6 +31,7 @@ int main(int argc, char *argv[])
             break;
         }
     }
+
     ResearchCodeManager w;
     w.show();
     int result = a.exec();

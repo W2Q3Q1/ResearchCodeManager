@@ -15,7 +15,7 @@
     此类直接操作底层数据库、文件，因此不会进行任何的用户提示
     如需用户提示（如确定等），写在界面类
 */
-class CodeManager: QObject
+class CodeManager: public QObject
 {
     Q_OBJECT
     private:
