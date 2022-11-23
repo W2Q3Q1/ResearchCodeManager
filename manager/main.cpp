@@ -14,12 +14,12 @@ int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
     //单实例运行
-    QSharedMemory sm("test_shared");
-    if(sm.attach()){
+    QSharedMemory shared_memory("manager");
+    if(shared_memory.attach()){
         QMessageBox::critical(nullptr, QObject::tr("Critical Error"), QObject::tr("An instance has already been activated!"));
         return 0;
     }
-    sm.create(1);
+    shared_memory.create(1);
     //迫使代码创建一个CodeManager对象
     CodeManager::getSelf();
     QTranslator translator;
