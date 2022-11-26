@@ -1,0 +1,10 @@
+#ifndef ENUMERATION_H
+#define ENUMERATION_H
+
+enum UpdateType{
+    CHECK_AND_DOWNLOAD,
+    OVERRIDE_OLD,
+    REMOVE_NEW
+};
+
+#endif // ENUMERATION_H
