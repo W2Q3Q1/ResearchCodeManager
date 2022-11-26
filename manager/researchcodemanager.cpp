@@ -327,8 +327,8 @@ ResearchCodeManager::ResearchCodeManager(QWidget *parent)
     void (ResearchCodeManager::*research_code_manager_researchTreeCurrentItemChanged)(QTreeWidgetItem*, QTreeWidgetItem*) = &ResearchCodeManager::researchTreeCurrentItemChanged;
     connect(ui->researchTree, research_tree_widget_currentItemChanged, this, research_code_manager_researchTreeCurrentItemChanged);
     //researchTreeWidget右键菜单
-    void (QTreeWidget::*research_tree_widget_customContextMenuRequested)(const QPoint&) = &QTreeWidget::customContextMenuRequested;
-    void (ResearchCodeManager::*research_code_manager_showResearchTreeWidgetMenu) (const QPoint&) = &ResearchCodeManager::showResearchTreeWidgetMenu;
+    void (QTreeWidget::*research_tree_widget_customContextMenuRequested)(const QPoint &) = &QTreeWidget::customContextMenuRequested;
+    void (ResearchCodeManager::*research_code_manager_showResearchTreeWidgetMenu) (const QPoint &) = &ResearchCodeManager::showResearchTreeWidgetMenu;
     connect(ui->researchTree, research_tree_widget_customContextMenuRequested, this, research_code_manager_showResearchTreeWidgetMenu);
     //add/delete菜单项事件
     void (QAction::*actions_triggered) (bool) = &QAction::triggered;
